@@ -1,0 +1,27 @@
+.footer {
+  background: #1b1b1b;
+  padding-bottom: 40px;
+  position: relative;
+  .max {
+    padding: 30px 10px 50px 10px;
+    max-width: 1400px!important;
+    clear: both;
+    margin: 0 auto;
+    vertical-align: bottom!important;
+    .twenty {
+      width: 18%;
+    }
+    .float1 {
+      float: left;
+    }
+    .pad1 {
+      padding-left: 30px;
+    }
+    .twentyfive {
+      width: 25%;
+    }
+    .footer-links {
+
+    }
+  }
+}

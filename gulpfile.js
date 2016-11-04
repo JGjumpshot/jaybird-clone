@@ -4,7 +4,7 @@ var sass = require('gulp-sass');
 var annotate = require('gulp-ng-annotate');
 
 
-var paths = ['./app.js', './accessories/**/*.js','./cart/**/*.js', './directives/**/*.js', './home/**/*.js'];
+var paths = ['./app/**/*.js'];
 var stylePath = ['./styles/**/*.scss'];
 
 gulp.task('sass', function() {

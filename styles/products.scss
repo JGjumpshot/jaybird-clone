@@ -1,0 +1,107 @@
+@import url('//db.onlinewebfonts.com/c/335787aa6f57d71cabe8eb5dc89c6d6b?family=Blender+Pro');
+@font-face {font-family: "Blender Pro";
+    src: url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot");
+    src: url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.svg#Blender Pro") format("svg");
+}
+$green: #D1EB24;
+.product-wrapper {
+  padding-top: 120px;
+  padding-bottom: 150px;
+  display: flex;
+  .word-wrapper {
+    width: 49%;
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 150px;
+    .title {
+      // float: left;
+      font-family: 'Blender Pro', sans-serif;
+      color: #101010;
+      font-weight: bolder;
+      text-transform: uppercase;
+      h1 {
+        // margin-left: 140px;
+        font-size: 30px;
+        border-bottom: 2px solid #999;
+        padding-bottom: 10px;
+        width: 33%;
+      }
+    }
+    .description {
+      width: 80%;
+      font-family: 'Blender Pro', sans-serif;
+      font-size: 20px;
+      color: #101010;
+      display: block;
+      .selection-wrapper {
+        height: 34px;
+        display: flex;
+        justify-content: space-between;
+        .style {
+          width: 35%;
+        }
+        .quantity {
+          width: 48px;
+        }
+      }
+
+    }
+  }
+  .no-jump {
+    width: 550px;
+    height: 711.16px;
+  }
+  .product-image{
+    width: 550px;
+    height: 711.16px;
+    display: inline-block;
+    margin-right: 100px;
+    .image {
+      max-width: 100%;
+      height:auto;
+      // position: relative;
+      overflow: hidden;
+    }
+  }
+  .price-wrapper {
+    font-family: 'Blender Pro';
+    color: #101010;
+    font-size: 30px;
+    font-weight: 500;
+    border-top: 2px solid #999;
+    border-bottom: 2px solid #999;
+    margin-top: 10px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-around;
+    .price {
+      padding-top: 3px;
+    }
+    .tocart {
+      font-size: 30px;
+      padding: 3px 5px;
+    }
+    .tocart:hover {
+      background-color: $green;
+      color: white;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+  }
+
+}
+
+
+@media only screen and (min-width: 400px) {
+  // .image{
+  //   margin-left:250px;
+  // }
+}

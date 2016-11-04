@@ -1,0 +1,35 @@
+<div class="topmenu">
+  <div class="max">
+    <div class="homebtn">
+      <a ui-sref="home">
+        <img class="logo" src="../images/jaybird-logo.png" />
+      </a>
+    </div>
+    <!-- <div class="pages"> -->
+      <ul class="myMenu">
+        <div id="dropdown" ng-mouseleave="productDropDown=false">
+          <li ng-mouseover="productDropDown=true">PRODUCTS</li>
+          <div class="mySubMenu" id="mySubMenu" ng-show="productDropDown">
+          <div class="max">
+            <div class="product-nav">
+              <div ui-sref="products({id: 4})">
+                <img src="http://www.jaybirdsport.com/static/img/f5-sub.png" alt="" />
+              </div>
+              <div ui-sref="products({id: 3})">
+                <img src="http://www.jaybirdsport.com/static/img/x3-sub.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <li ui-sref="accessories">ACCESSORIES</li>
+        <li>ATHLETES</li>
+        <li>BLOG</li>
+        <li>SUPPORT</li>
+        <!-- <img class = "cart" src="http://www.jaybirdsport.com/static/img/cart-wht-ch.png" /> -->
+        <li class="cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
+      </ul>
+    <!-- </div> -->
+  </div>
+</div>

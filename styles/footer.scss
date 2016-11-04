@@ -1,7 +1,29 @@
+@import url('//db.onlinewebfonts.com/c/335787aa6f57d71cabe8eb5dc89c6d6b?family=Blender+Pro');
+@font-face {font-family: "Blender Pro";
+    src: url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot");
+    src: url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.svg#Blender Pro") format("svg");
+}
+$green: #D1EB24;
 .footer {
   background: #1b1b1b;
   padding-bottom: 40px;
   position: relative;
+  overflow: hidden;
+  h3 {
+    color: #787878;
+    font-size: 22px;
+    font-family: 'Blender Pro', sans-serif;
+    text-transform: uppercase;
+    border-bottom: 1px solid #404040;
+    margin-bottom: 10px;
+    padding-bottom: 7px;
+    letter-spacing: 2px;
+    font-weight: 800;
+  }
   .max {
     padding: 30px 10px 50px 10px;
     max-width: 1400px!important;
@@ -13,15 +35,53 @@
     }
     .float1 {
       float: left;
+      .footer-links {
+        padding: 0px;
+        font-family: 'Blender Pro', sans-sarif;
+        li {
+          line-height: 17px!important;
+          padding: 5px 0 0 0px;
+          list-style-type: none;
+          color: #999;
+          font-size: 16px;
+          transition: .5s;
+        }
+        li:hover {
+          color: $green;
+          cursor: pointer;
+        }
+        p {
+            line-height: 17px!important;
+            padding: 5px 0 0 0px;
+            list-style-type: none;
+            color: #999;
+            font-size: 14px;
+        }
+
+        .button {
+          background: #D1EB24;
+          padding: 1px 12px 0px 12px;
+          color: #000;
+          letter-spacing: 1px;
+          font-family:'Blender Pro', sans-serif;
+          font-size: 18px;
+          line-height: 30px;
+          float: left;
+          text-align: center;
+          border: none;
+          margin-top: 70px;
+        }
+      }
+      .form {
+       display: block;
+       position: absolute;
+     }
     }
     .pad1 {
       padding-left: 30px;
     }
     .twentyfive {
       width: 25%;
-    }
-    .footer-links {
-
     }
   }
 }

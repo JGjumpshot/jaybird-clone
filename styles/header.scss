@@ -16,7 +16,7 @@ body{
 
 .topmenu {
   background-color: $bg-color;
-  padding-top: 20px;
+  padding-top: 16px;
   position: fixed;
   width: 100%;
   z-index: 9000;
@@ -25,13 +25,14 @@ body{
     clear: both;
     margin: 0 auto;
     vertical-align: bottom!important;
-    height: auto;
+    height: 35px;
     .homebtn {
       position: absolute;
     }
     .logo{
       width: 80px;
       height: 17px;
+      margin-left: 26px;
     }
     .myMenu {
       width: 60%;
@@ -41,8 +42,7 @@ body{
       list-style-type: none;
       cursor: pointer;
       text-decoration: none;
-      margin:auto;
-      // margin-left: 185px;
+      margin: 0 134px; //auto
       padding: 0;
       font-family: 'Blender Pro', sans-serif;
       font-size: 14px;
@@ -53,6 +53,30 @@ body{
       }
       li:hover {
         color: #999;
+      }
+      #dropdown {
+        width: auto;
+        float: left;
+        bottom: 0;
+        height: 50px;
+        padding-top: 2px;
+        display: inline-block;
+        // opacity: 0.75;
+        #mySubMenu {
+          // height: 215px;
+          position: absolute;
+          top: 51px;
+          left: 0px;
+          width: 100vw;
+          height: 250px;
+          background-color: rgba(255, 255, 255, 0.75); //love this
+        }
+        .product-nav {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          // opacity: 1.0;
+        }
       }
     }
 
@@ -70,7 +94,7 @@ body{
     position: relative;
     top: 255px;
     left: 219px;
-    max-width: 25%;
+    max-width: 42%;
   }
 
 //   .caption1 {
@@ -231,7 +255,7 @@ body{
   }
   .f5-home {
     margin-top: 30vh;
-    margin-right: 5%;
+    // margin-right: 5%;
     padding-right: 2%;
     width: 29%;
     font-family: 'Blender Pro', sans-serif;

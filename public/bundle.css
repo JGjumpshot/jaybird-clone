@@ -1,7 +1,49 @@
+@import url("//db.onlinewebfonts.com/c/335787aa6f57d71cabe8eb5dc89c6d6b?family=Blender+Pro");
+@font-face {
+  font-family: "Blender Pro";
+  src: url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot");
+  src: url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.woff") format("woff"), url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.svg#Blender Pro") format("svg"); }
+
+.accessories-wrapper {
+  min-height: 800px;
+  padding-top: 120px;
+  padding-bottom: 150px;
+  display: flex;
+  justify-content: space-around; }
+  .accessories-wrapper img {
+    width: 270px; }
+  .accessories-wrapper .title {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #EEE;
+    border-bottom: 1px solid #EEE;
+    font-family: "Blender Pro";
+    font-size: 22px;
+    color: #666;
+    padding: 7px 0;
+    margin-top: 8px; }
+
+@import url("//db.onlinewebfonts.com/c/335787aa6f57d71cabe8eb5dc89c6d6b?family=Blender+Pro");
+@font-face {
+  font-family: "Blender Pro";
+  src: url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot");
+  src: url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.woff") format("woff"), url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.svg#Blender Pro") format("svg"); }
+
 .footer {
   background: #1b1b1b;
   padding-bottom: 40px;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
+  .footer h3 {
+    color: #787878;
+    font-size: 22px;
+    font-family: 'Blender Pro', sans-serif;
+    text-transform: uppercase;
+    border-bottom: 1px solid #404040;
+    margin-bottom: 10px;
+    padding-bottom: 7px;
+    letter-spacing: 2px;
+    font-weight: 800; }
   .footer .max {
     padding: 30px 10px 50px 10px;
     max-width: 1400px !important;
@@ -12,10 +54,93 @@
       width: 18%; }
     .footer .max .float1 {
       float: left; }
+      .footer .max .float1 .footer-links {
+        padding: 0px;
+        font-family: 'Blender Pro', sans-sarif; }
+        .footer .max .float1 .footer-links li {
+          line-height: 17px !important;
+          padding: 5px 0 0 0px;
+          list-style-type: none;
+          color: #999;
+          font-size: 16px;
+          transition: .5s; }
+        .footer .max .float1 .footer-links li:hover {
+          color: #D1EB24;
+          cursor: pointer; }
+        .footer .max .float1 .footer-links p {
+          line-height: 17px !important;
+          padding: 5px 0 0 0px;
+          list-style-type: none;
+          color: #999;
+          font-size: 14px; }
+        .footer .max .float1 .footer-links .button {
+          background: #D1EB24;
+          padding: 1px 12px 0px 12px;
+          color: #000;
+          letter-spacing: 1px;
+          font-family: 'Blender Pro', sans-serif;
+          font-size: 18px;
+          line-height: 30px;
+          float: left;
+          text-align: center;
+          border: none;
+          margin-top: 70px; }
+      .footer .max .float1 .form {
+        display: block;
+        position: absolute; }
     .footer .max .pad1 {
       padding-left: 30px; }
     .footer .max .twentyfive {
       width: 25%; }
+
+@import url("//db.onlinewebfonts.com/c/335787aa6f57d71cabe8eb5dc89c6d6b?family=Blender+Pro");
+@font-face {
+  font-family: "Blender Pro";
+  src: url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot");
+  src: url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.woff") format("woff"), url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.svg#Blender Pro") format("svg"); }
+
+.inthebox {
+  background: #111;
+  padding: 50px 0 50px 40px;
+  height: 580px;
+  width: 100%;
+  position: relative; }
+  .inthebox .intheboxcontainer {
+    margin: 0 auto;
+    width: 1250px; }
+    .inthebox .intheboxcontainer .inthebox-txt {
+      color: #999;
+      font-size: 120px;
+      line-height: 120px;
+      font-family: 'Blender Pro';
+      letter-spacing: 3px;
+      position: absolute;
+      padding: 10px 0 0 50px;
+      width: 200px; }
+    .inthebox .intheboxcontainer .x2case {
+      position: absolute;
+      padding: 0px 0 0 250px; }
+    .inthebox .intheboxcontainer .x2buds {
+      position: absolute;
+      padding: 0px 0 0 520px; }
+    .inthebox .intheboxcontainer .x2fins {
+      position: absolute;
+      padding: 20px 0 0 500px; }
+    .inthebox .intheboxcontainer .x2comply {
+      position: absolute;
+      padding: 265px 0 0 280px; }
+    .inthebox .intheboxcontainer .x2silicone {
+      position: absolute;
+      padding: 260px 0 0 510px; }
+    .inthebox .intheboxcontainer .x2clips {
+      position: absolute;
+      padding: 210px 0 0 525px; }
+    .inthebox .intheboxcontainer .x2charger {
+      position: absolute;
+      padding: 420px 0 0 40px; }
+    .inthebox .intheboxcontainer .x2box {
+      position: absolute;
+      padding: 20px 0 0 880px; }
 
 @import url("//db.onlinewebfonts.com/c/335787aa6f57d71cabe8eb5dc89c6d6b?family=Blender+Pro");
 @font-face {
@@ -28,7 +153,7 @@ body {
 
 .topmenu {
   background-color: rgba(0, 0, 0, 0.8);
-  padding-top: 20px;
+  padding-top: 16px;
   position: fixed;
   width: 100%;
   z-index: 9000; }
@@ -37,12 +162,13 @@ body {
     clear: both;
     margin: 0 auto;
     vertical-align: bottom !important;
-    height: auto; }
+    height: 35px; }
     .topmenu .max .homebtn {
       position: absolute; }
     .topmenu .max .logo {
       width: 80px;
-      height: 17px; }
+      height: 17px;
+      margin-left: 26px; }
     .topmenu .max .myMenu {
       width: 60%;
       position: inline-block;
@@ -51,7 +177,7 @@ body {
       list-style-type: none;
       cursor: pointer;
       text-decoration: none;
-      margin: auto;
+      margin: 0 134px;
       padding: 0;
       font-family: 'Blender Pro', sans-serif;
       font-size: 14px;
@@ -61,6 +187,24 @@ body {
         transition: .5s; }
       .topmenu .max .myMenu li:hover {
         color: #999; }
+      .topmenu .max .myMenu #dropdown {
+        width: auto;
+        float: left;
+        bottom: 0;
+        height: 50px;
+        padding-top: 2px;
+        display: inline-block; }
+        .topmenu .max .myMenu #dropdown #mySubMenu {
+          position: absolute;
+          top: 51px;
+          left: 0px;
+          width: 100vw;
+          height: 250px;
+          background-color: rgba(255, 255, 255, 0.75); }
+        .topmenu .max .myMenu #dropdown .product-nav {
+          display: flex;
+          justify-content: space-around;
+          align-items: center; }
     .topmenu .max .cart {
       opacity: .6;
       background: no-repeat; }
@@ -72,7 +216,7 @@ body {
     position: relative;
     top: 255px;
     left: 219px;
-    max-width: 25%; }
+    max-width: 42%; }
 
 #slide1 {
   background: url("http://www.jaybirdsport.com/static/img/slide-mitch-x3.jpg") no-repeat center;
@@ -189,7 +333,6 @@ body {
     position: relative; }
   .home-three .f5-home {
     margin-top: 30vh;
-    margin-right: 5%;
     padding-right: 2%;
     width: 29%;
     font-family: 'Blender Pro', sans-serif;
@@ -220,3 +363,106 @@ body {
   .topmenu {
     height: 50px;
     display: none; } }
+
+@import url("//db.onlinewebfonts.com/c/335787aa6f57d71cabe8eb5dc89c6d6b?family=Blender+Pro");
+@font-face {
+  font-family: "Blender Pro";
+  src: url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot");
+  src: url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.woff") format("woff"), url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.svg#Blender Pro") format("svg"); }
+
+.product-wrapper {
+  padding-top: 120px;
+  padding-bottom: 150px;
+  display: flex; }
+  .product-wrapper .word-wrapper {
+    width: 49%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 150px; }
+    .product-wrapper .word-wrapper .title {
+      font-family: 'Blender Pro', sans-serif;
+      color: #101010;
+      font-weight: bolder;
+      text-transform: uppercase; }
+      .product-wrapper .word-wrapper .title h1 {
+        font-size: 30px;
+        border-bottom: 2px solid #999;
+        padding-bottom: 10px;
+        width: 33%; }
+    .product-wrapper .word-wrapper .description {
+      width: 80%;
+      font-family: 'Blender Pro', sans-serif;
+      font-size: 20px;
+      color: #101010;
+      display: block; }
+      .product-wrapper .word-wrapper .description .selection-wrapper {
+        height: 34px;
+        display: flex;
+        justify-content: space-between; }
+        .product-wrapper .word-wrapper .description .selection-wrapper .style {
+          width: 35%; }
+        .product-wrapper .word-wrapper .description .selection-wrapper .quantity {
+          width: 48px; }
+  .product-wrapper .no-jump {
+    width: 550px;
+    height: 711.16px; }
+  .product-wrapper .product-image {
+    width: 550px;
+    height: 711.16px;
+    display: inline-block;
+    margin-right: 100px; }
+    .product-wrapper .product-image .image {
+      max-width: 100%;
+      height: auto;
+      overflow: hidden; }
+  .product-wrapper .price-wrapper {
+    font-family: 'Blender Pro';
+    color: #101010;
+    font-size: 30px;
+    font-weight: 500;
+    border-top: 2px solid #999;
+    border-bottom: 2px solid #999;
+    margin-top: 10px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-around; }
+    .product-wrapper .price-wrapper .price {
+      padding-top: 3px; }
+    .product-wrapper .price-wrapper .tocart {
+      font-size: 30px;
+      padding: 3px 5px; }
+    .product-wrapper .price-wrapper .tocart:hover {
+      background-color: #D1EB24;
+      color: white;
+      border-radius: 2px;
+      cursor: pointer; }
+
+@import url("//db.onlinewebfonts.com/c/335787aa6f57d71cabe8eb5dc89c6d6b?family=Blender+Pro");
+@font-face {
+  font-family: "Blender Pro";
+  src: url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot");
+  src: url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.woff") format("woff"), url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.svg#Blender Pro") format("svg"); }
+
+.inthebox-x3 {
+  background: #111;
+  padding: 30px 30px 30px 30px;
+  width: 100%;
+  position: relative; }
+  .inthebox-x3 .intheboxcontainer-x3 {
+    margin: 0 auto;
+    max-width: 1250px; }
+    .inthebox-x3 .intheboxcontainer-x3 .inthebox-txt-x3 {
+      color: #999;
+      font-size: 70px;
+      line-height: 70px;
+      font-family: 'Blender Pro', sans-serif;
+      letter-spacing: 2px;
+      position: absolute;
+      padding: 0px 0 0 50px; }
+    .inthebox-x3 .intheboxcontainer-x3 .x3itb-1 {
+      display: block; }
+      .inthebox-x3 .intheboxcontainer-x3 .x3itb-1 .imgfull {
+        width: 100%; }

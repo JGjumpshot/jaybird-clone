@@ -1,0 +1,30 @@
+<div class="product-wrapper">
+  <div class="word-wrapper">
+    <div class="title">
+      <h1>{{product.title}}</h1>
+    </div>
+    <div class="description">
+      {{product.description}}
+      <div class="price-wrapper">
+        <div class="price">
+          ${{product.price}}
+        </div>
+        <div class="tocart">
+          ADD TO CART
+        </div>
+      </div>
+      <div class="selection-wrapper">
+        <input type="number" name="name" value="" ng-model="qty" class="quantity">
+        <select class="style" name="color" ng-options="style as style.title for style in styles" ng-model="selectedStyle">
+          <option value="">COLOR</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="product-image no-jump">
+    <img ng-src="{{product.imageurl}}" alt="" class="image" ng-if="!selectedStyle"/>
+    <img ng-src="{{selectedStyle.imageurl}}" alt="" class="image" ng-if="selectedStyle"/>
+  </div>
+</div>
+<x3-directive ng-show="id==3"></x3-directive>
+<freedom-directive ng-show="id==4"></freedom-directive>

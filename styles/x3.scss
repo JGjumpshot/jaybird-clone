@@ -1,0 +1,35 @@
+@import url('//db.onlinewebfonts.com/c/335787aa6f57d71cabe8eb5dc89c6d6b?family=Blender+Pro');
+@font-face {font-family: "Blender Pro";
+    src: url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot");
+    src: url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.svg#Blender Pro") format("svg");
+}
+
+.inthebox-x3 {
+  background: #111;
+  padding: 30px 30px 30px 30px;
+  width: 100%;
+  position: relative;
+  .intheboxcontainer-x3 {
+    margin: 0 auto;
+    max-width: 1250px;
+    .inthebox-txt-x3 {
+      color: #999;
+      font-size: 70px;
+      line-height: 70px;
+      font-family: 'Blender Pro', sans-serif;
+      letter-spacing: 2px;
+      position: absolute;
+      padding: 0px 0 0 50px;
+    }
+    .x3itb-1 {
+      display: block;
+      .imgfull {
+        width: 100%;
+      }
+    }
+  }
+}

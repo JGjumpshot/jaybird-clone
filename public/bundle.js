@@ -35,7 +35,8 @@ angular.module("jaybirdApp", ['ui.router'])
   })
 }])
 
-angular.module('jaybirdApp').controller('accessoriesCtrl', ["$scope", "mainService", function($scope, mainService) {
+angular.module('jaybirdApp').controller('accessoriesCtrl', ["$scope", "mainService", "$state", function($scope, mainService, $state) {
+  // console.log($state.params.id);
   $scope.getAccessories = function() {
     console.log('holla');
     mainService.getAccessories('accessory').then(function(response) {
@@ -46,10 +47,6 @@ angular.module('jaybirdApp').controller('accessoriesCtrl', ["$scope", "mainServi
   $scope.getAccessories();
 }])
 
-
-angular.module('jaybirdApp').controller('homeCtrl', ["$scope", function($scope) {
-  $scope.showVid = false;
-}])
 
 angular.module('jaybirdApp').directive('footerDirective', function() {
   return {
@@ -79,14 +76,21 @@ angular.module('jaybirdApp').directive('x3Directive', function() {
   }
 })
 
+angular.module('jaybirdApp').controller('homeCtrl', ["$scope", function($scope) {
+  $scope.showVid = false;
+}])
+
 angular.module('jaybirdApp').controller('productsCtrl', ["$scope", "$state", "mainService", "product", function($scope, $state, mainService, product) {
   $scope.id = $state.params.id;
+  // $state.go('products'+$scope.id);
+  // console.log($scope.id);
   console.log("you got it: ", product);
   console.log($scope.product);
   $scope.product = product.product[0];
   $scope.styles = product.style;
   $scope.qty = 1;
   $scope.selectedStyle = '';
+  $scope.addToCart = mainService.addToCart(productid);
   //make GET function , connect to service and get all products, save response on scope
   //at the end of this function (){}()
   //outside, make for loop that goes over the saved response and cuts the last 4 and puts them into a new array
@@ -112,5 +116,10 @@ angular.module('jaybirdApp').service('mainService', ["$http", function($http) {
       })
   }
 
+  // this.addToCart = function(productid) {
+  //   return $http({
+  //     method:
+  //   })
+  // }
 
 }])

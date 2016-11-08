@@ -17,5 +17,10 @@ angular.module('jaybirdApp').service('mainService', function($http) {
       })
   }
 
+  this.addToCart = function(productid) {
+    return $http({
+      method:
+    })
+  }
 
 })

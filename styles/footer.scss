@@ -76,6 +76,21 @@ $green: #D1EB24;
        display: block;
        position: absolute;
      }
+     .social {
+       float: left;
+      margin: 10px 0px 0 0;
+      width: 173px;
+       img {
+         width: 40px;
+         opacity: .4;
+         margin: 13px 0 0 0px;
+         transition: .5s;
+       }
+       img:hover {
+         opacity: .8;
+         cursor: pointer;
+       }
+     }
     }
     .pad1 {
       padding-left: 30px;

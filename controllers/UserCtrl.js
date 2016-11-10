@@ -26,9 +26,18 @@ module.exports = {
         .send(err);
 
         //send user back without password
-        delete user.password;
-        res.status(200)
-          .send(user);
+
+
+          user = user[0];
+          db.order_create([user.userid], function(err, order) {
+            console.log(err);
+            if (err) {
+              return res.status(500)
+                .send(err);
+            }
+            res.status(200)
+              .send('User and Order created successfully');
+          });
     });
   },
 

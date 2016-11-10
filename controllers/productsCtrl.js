@@ -18,6 +18,21 @@ module.exports = {
     db.get_product_by_type([type], function(err, products) {
       res.status(200).json(products);
     })
+  },
+  addToCart: function(req, res, next) {
+    var product = req.body;
+    db.add_to_cart([req.params.cartid, product.id, product.qty, product.style], function(err, productAdded) {
+      console.log(err);
+      res.status(200).json(productAdded);
+    })
+  },
+  getByCartId: function(req, res, next) {
+    var cartid = req.params.cartid;
+    db.get_products_by_cartid([cartid], function(err, products) {
+      console.log(err);
+
+      res.status(200).json(products);
+    })
   }
 
 }

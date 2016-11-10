@@ -1,0 +1,16 @@
+<div class="form-wrapper">
+  <form ng-submit="login(user)" class="form1">
+    <h1 class="sign-in">Sign in</h1>
+    Email: <input type="email" ng-model="user.email" required/>
+    Password: <input type="password" ng-model="user.password" required/>
+    <button type="submit" class="form-button1">Login</button>
+  </form>
+
+  <form ng-submit="register(newUser)" class="form2">
+    <h1 class="sign-up">sign up</h1>
+    Name: <input type="text" ng-model="newUser.name" required/>
+    Email: <input type="email" ng-model="newUser.email" required/>
+    Password: <input type="password" ng-model="newUser.password" required/>
+    <button type="submit" class="form-button2">Register</button>
+  </form>
+</div>

@@ -2,7 +2,8 @@ var gulp = require('gulp');
 var concat = require('gulp-concat');
 var sass = require('gulp-sass');
 var annotate = require('gulp-ng-annotate');
-
+// var plumber = require('gulp-plumber');
+// var gutil = require('gulp-util');
 
 var paths = ['./app/**/*.js'];
 var stylePath = ['./styles/**/*.scss'];
@@ -25,5 +26,6 @@ gulp.task('watch', function() {
   gulp.watch(paths, ['js']);
   gulp.watch(stylePath, ['sass']);
 });
+
 
 gulp.task('default', ['watch', 'js', 'sass']);

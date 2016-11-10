@@ -1,4 +1,4 @@
-angular.module("jaybirdApp", ['ui.router'])
+angular.module('jaybirdApp', ['ui.router'])
 .config(function($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/')
 
@@ -18,19 +18,32 @@ angular.module("jaybirdApp", ['ui.router'])
       }
     }
   })
-  // .state('products/freedom', {
-  //   url: '/products/freedom',
-  //   controller: 'freedomCtrl',
-  //   templateUrl: './products/freedom/freedom.html'
-  // })
-  // .state('products/x3', {
-  //   url: '/products/x3',
-  //   controller: 'x3Ctrl',
-  //   templateUrl: './products/x3/x3.html'
-  // })
   .state('accessories', {
     url: '/accessories',
     controller: 'accessoriesCtrl',
     templateUrl: './app/accessories/accessories.html'
   })
-})
+  .state('login', {
+    url: '/login',
+    controller: 'loginCtrl',
+    templateUrl: './app/login/loginTmpl.html'
+  })
+  .state('profile', {
+    url: '/profile',
+    controller: 'profileCtrl',
+    templateUrl: './app/profile/profileTmpl.html',
+    resolve: {
+      user: function(authService, $state) {
+        return authService.getCurrentUser()
+        .then(function(response) {
+          if (!response.data)
+            $state.go('login');
+          return response.data;
+        })
+        .catch(function(err) {
+          $state.go('login');
+        });
+      }
+    }
+  });
+});

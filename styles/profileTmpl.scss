@@ -1,0 +1,38 @@
+@import url('//db.onlinewebfonts.com/c/335787aa6f57d71cabe8eb5dc89c6d6b?family=Blender+Pro');
+@font-face {font-family: "Blender Pro";
+    src: url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot");
+    src: url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.svg#Blender Pro") format("svg");
+}
+
+$font: 'Blender Pro';
+
+.cart-text {
+  font-family: $font;
+  font-weight: 500;
+  position: absolute;
+  padding-top: 10vh;
+  padding-left: 10vw;
+  text-transform: uppercase;
+  z-index: 200;
+}
+.cart-image {
+  border: 2px solid #999;
+  width: 60vw;
+  height: 25vh;
+  margin-left: 20%;
+  border-radius: 25px;
+  .products-in-cart{
+    width: 200px;
+    position: relative;
+    // margin-top: 20vh;
+    left: 20vh;
+    z-index: -1;
+  }
+  .order-price {
+    display: flex;
+  }
+}

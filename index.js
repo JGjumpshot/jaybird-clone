@@ -18,6 +18,7 @@ app.use(express.static(__dirname));
 app.use(cors());
 
 var UserCtrl = require('./controllers/UserCtrl');
+var orderCtrl = require('./controllers/orderCtrl');
 
 var passport = require('./services/passport');
 
@@ -55,8 +56,9 @@ app.put('/user/:_id', isAuthed, UserCtrl.update);
 app.get('/product/:productId', productsCtrl.getOne);
 app.get('/product/type/:producttype', productsCtrl.getByType);
 //test stuff in postman!!!
-
-
+app.post('/profile/cart/:cartid', productsCtrl.addToCart);
+app.get('/profile/getCart/:userid', orderCtrl.getCart);
+app.get('/profile/getProductsByCartId/:cartid', productsCtrl.getByCartId)
 
 app.listen(port, function() {
   console.log('nailed it on port ' + port);

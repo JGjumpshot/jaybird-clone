@@ -60,7 +60,8 @@
     margin: 0 auto;
     vertical-align: bottom !important; }
     .footer .max .twenty {
-      width: 18%; }
+      width: 18%;
+      padding-left: 30px; }
     .footer .max .float1 {
       float: left; }
       .footer .max .float1 .footer-links {
@@ -112,7 +113,8 @@
     .footer .max .pad1 {
       padding-left: 30px; }
     .footer .max .twentyfive {
-      width: 25%; }
+      width: 25%;
+      padding-left: 30px; }
 
 @import url("//db.onlinewebfonts.com/c/335787aa6f57d71cabe8eb5dc89c6d6b?family=Blender+Pro");
 @font-face {
@@ -238,6 +240,15 @@ body {
     top: 255px;
     left: 219px;
     max-width: 42%; }
+  .item .signature {
+    float: right;
+    padding-top: 49vh;
+    padding-right: 5%;
+    text-transform: uppercase;
+    font-family: 'Blender Pro';
+    letter-spacing: 1px;
+    font-size: 18px;
+    opacity: .6; }
 
 #slide1 {
   background: url("http://www.jaybirdsport.com/static/img/slide-mitch-x3.jpg") no-repeat center;
@@ -391,6 +402,51 @@ body {
   src: url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot");
   src: url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.woff") format("woff"), url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.svg#Blender Pro") format("svg"); }
 
+.form-wrapper {
+  min-height: 725px;
+  padding-top: 120px;
+  padding-bottom: 150px;
+  color: #101010; }
+  .form-wrapper .form1 {
+    width: 32vw;
+    font-family: "Blender Pro", sans-serif;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    flex-direction: column;
+    padding-left: 20%; }
+    .form-wrapper .form1 .sign-in {
+      font-family: "Blender Pro", sans-serif;
+      color: #999;
+      text-transform: uppercase; }
+    .form-wrapper .form1 input {
+      margin-bottom: 6px; }
+  .form-wrapper .form-button1 {
+    font-family: "Blender Pro", sans-serif; }
+  .form-wrapper .form2 {
+    width: 44vw;
+    float: right;
+    font-family: "Blender Pro", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-direction: column;
+    padding-right: 26%; }
+    .form-wrapper .form2 .sign-up {
+      font-family: "Blender Pro", sans-serif;
+      color: #999;
+      text-transform: uppercase; }
+    .form-wrapper .form2 input {
+      margin-bottom: 6px; }
+  .form-wrapper .form-button2 {
+    font-family: "Blender Pro", sans-serif; }
+
+@import url("//db.onlinewebfonts.com/c/335787aa6f57d71cabe8eb5dc89c6d6b?family=Blender+Pro");
+@font-face {
+  font-family: "Blender Pro";
+  src: url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot");
+  src: url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.woff") format("woff"), url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.svg#Blender Pro") format("svg"); }
+
 .product-wrapper {
   padding-top: 120px;
   padding-bottom: 150px;
@@ -458,8 +514,37 @@ body {
     .product-wrapper .price-wrapper .tocart:hover {
       background-color: #D1EB24;
       color: white;
-      border-radius: 2px;
+      border-radius: 13px 0px;
       cursor: pointer; }
+
+@import url("//db.onlinewebfonts.com/c/335787aa6f57d71cabe8eb5dc89c6d6b?family=Blender+Pro");
+@font-face {
+  font-family: "Blender Pro";
+  src: url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot");
+  src: url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.woff") format("woff"), url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.svg#Blender Pro") format("svg"); }
+
+.cart-text {
+  font-family: "Blender Pro";
+  font-weight: 500;
+  position: absolute;
+  padding-top: 10vh;
+  padding-left: 10vw;
+  text-transform: uppercase;
+  z-index: 200; }
+
+.cart-image {
+  border: 2px solid #999;
+  width: 60vw;
+  height: 25vh;
+  margin-left: 20%;
+  border-radius: 25px; }
+  .cart-image .products-in-cart {
+    width: 200px;
+    position: relative;
+    left: 20vh;
+    z-index: -1; }
+  .cart-image .order-price {
+    display: flex; }
 
 @import url("//db.onlinewebfonts.com/c/335787aa6f57d71cabe8eb5dc89c6d6b?family=Blender+Pro");
 @font-face {

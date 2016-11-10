@@ -17,7 +17,9 @@
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
     "gulp-ng-annotate": "^2.0.0",
+    "gulp-plumber": "^1.1.0",
     "gulp-sass": "^2.3.2",
+    "gulp-util": "^3.0.7",
     "massive": "^2.5.0",
     "passport": "^0.3.2",
     "passport-local": "^1.0.0"

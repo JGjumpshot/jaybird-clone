@@ -1,0 +1,57 @@
+@import url('//db.onlinewebfonts.com/c/335787aa6f57d71cabe8eb5dc89c6d6b?family=Blender+Pro');
+@font-face {font-family: "Blender Pro";
+    src: url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot");
+    src: url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.svg#Blender Pro") format("svg");
+}
+$font: 'Blender Pro';
+.form-wrapper {
+  min-height: 725px;
+  padding-top: 120px;
+  padding-bottom: 150px;
+  color: #101010;
+  .form1 {
+    width: 32vw;
+    font-family: $font, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    flex-direction: column;
+    padding-left: 20%;
+    .sign-in {
+      font-family: $font, sans-serif;
+      color: #999;
+      text-transform: uppercase;
+    }
+    input {
+      margin-bottom: 6px;
+    }
+  }
+  .form-button1 {
+    font-family: $font, sans-serif;
+  }
+  .form2 {
+    width: 44vw;
+    float: right;
+    font-family: $font, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-direction: column;
+    padding-right: 26%;
+    .sign-up {
+      font-family: $font, sans-serif;
+      color: #999;
+      text-transform: uppercase;
+    }
+    input {
+      margin-bottom: 6px;
+    }
+  }
+  .form-button2 {
+    font-family: $font, sans-serif;
+  }
+}

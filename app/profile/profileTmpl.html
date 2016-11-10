@@ -1,0 +1,5 @@
+  <h2 class="cart-text">items in cart</h2>
+  <div class="cart-image" ng-repeat="product in products">
+    <img class="products-in-cart" ng-src="{{product.imageurl}}" alt="" />
+    <div class="order-price">{{product.price}}</div>
+  </div>

@@ -17,9 +17,31 @@ angular.module('jaybirdApp').service('mainService', function($http) {
       })
   }
 
-  this.addToCart = function(productid) {
+  this.addToCart = function(cartid, styleid, productid, qty) {
     return $http({
-      method:
+      method: 'POST',
+      url: '/profile/cart/' + cartid,
+      data: {
+        style: styleid,
+        id: productid,
+        qty: qty
+      }
+    }).then(function(response) {
+      return response.data;
+    })
+  }
+
+  this.getCart = function(userid) {
+    return $http({
+      method: 'GET',
+      url: '/profile/getCart/' + userid
+    })
+  }
+
+  this.getProductsByCartId = function(cartid) {
+    return $http({
+      method: 'GET',
+      url: '/profile/getProductsByCartId/' + cartid
     })
   }
 

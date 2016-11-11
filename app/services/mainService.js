@@ -45,4 +45,11 @@ angular.module('jaybirdApp').service('mainService', function($http) {
     })
   }
 
+  this.deleteById = function(id) {
+    return $http({
+      method: 'DELETE',
+      url: '/profile/deleteById/' + id
+    })
+  }
+
 })

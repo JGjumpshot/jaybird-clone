@@ -3,6 +3,7 @@ angular.module('jaybirdApp').controller('profileCtrl', function($scope, user, ma
   $scope.getProducts = function() {
     mainService.getProductsByCartId($scope.cart.orderid).then(function(response) {
       $scope.products = response.data;
+      console.log($scope.products);
     });
   }
 
@@ -39,6 +40,12 @@ angular.module('jaybirdApp').controller('profileCtrl', function($scope, user, ma
   }
 $scope.getCart();
 
+$scope.delete = function(id) {
+  mainService.deleteById(id).then(function(response) {
+    console.log(response.data);
+
+  })
+}
 
   // set cart in local storage to []
 });

@@ -158,6 +158,7 @@ angular.module('jaybirdApp').controller('profileCtrl', ["$scope", "user", "mainS
   $scope.getProducts = function() {
     mainService.getProductsByCartId($scope.cart.orderid).then(function(response) {
       $scope.products = response.data;
+      console.log($scope.products);
     });
   }
 
@@ -194,6 +195,12 @@ angular.module('jaybirdApp').controller('profileCtrl', ["$scope", "user", "mainS
   }
 $scope.getCart();
 
+$scope.delete = function(id) {
+  mainService.deleteById(id).then(function(response) {
+    console.log(response.data);
+
+  })
+}
 
   // set cart in local storage to []
 }]);
@@ -307,6 +314,13 @@ angular.module('jaybirdApp').service('mainService', ["$http", function($http) {
     return $http({
       method: 'GET',
       url: '/profile/getProductsByCartId/' + cartid
+    })
+  }
+
+  this.deleteById = function(id) {
+    return $http({
+      method: 'DELETE',
+      url: '/profile/deleteById/' + id
     })
   }
 

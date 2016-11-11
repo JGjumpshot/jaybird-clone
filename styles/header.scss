@@ -51,10 +51,11 @@ body{
       padding-bottom: 13px;
       li {
         transition: .5s;
+        &:hover {
+          color: #999;
+        }
       }
-      li:hover {
-        color: #999;
-      }
+      // li
       #dropdown {
         width: auto;
         float: left;
@@ -86,28 +87,41 @@ body{
     }
   }
 }
-
-.item {
-  min-height: 100vh;
-  width: 100vw;
-  .flex-caption {
+.carousel-inner {
     position: relative;
-    top: 255px;
-    left: 219px;
-    max-width: 42%;
-  }
-  .signature {
-    float: right;
-    padding-top: 49vh;
-    padding-right: 5%;
-    text-transform: uppercase;
-    font-family: 'Blender Pro';
-    letter-spacing: 1px;
-    font-size: 18px;
-    opacity: .6;
-  }
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: -10px;
+  .item {
+    min-height: 100vh;
+    width: 100vw;
+    .flex-caption {
+      position: relative;
+      top: 255px;
+      left: 219px;
+      max-width: 42%;
+    }
+    .sub-cap {
+      margin-top: 261px;
+      margin-left: 225px;
+      font-family: 'Blender Pro';
+      font-size: 22px;
+      text-transform: capitalize;
+    }
+    .signature {
+      float: right;
+      padding-top: 10%;
+      padding-right: 5%;
+      text-transform: uppercase;
+      font-family: 'Blender Pro';
+      letter-spacing: 1px;
+      font-size: 18px;
+      opacity: .6;
+    }
 
+  }
 }
+
 #slide1 {
   background: url('http://www.jaybirdsport.com/static/img/slide-mitch-x3.jpg') no-repeat center;
   background-size: cover;

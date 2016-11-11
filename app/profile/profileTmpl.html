@@ -7,5 +7,6 @@
       <div class="qty">{{product.products_qty}}</div>
       <div class="order-price">{{product.products_price}}</div>
       <img class="products-in-cart" ng-src="{{product.imageurl}}" alt="" />
+      <i class="fa fa-times-circle" aria-hidden="true" ng-click="delete(product.id)"></i>
     </div>
   </div>

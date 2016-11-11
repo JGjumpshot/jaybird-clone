@@ -33,6 +33,12 @@ module.exports = {
 
       res.status(200).json(products);
     })
+  },
+  deleteById: function(req, res, next) {
+    db.remove_from_cart([req.params.id], function(err, deletion) {
+      console.log(err);
+      res.status(200).json(deletion)
+    })
   }
 
 }

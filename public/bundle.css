@@ -208,8 +208,8 @@ body {
       padding-bottom: 13px; }
       .topmenu .max .myMenu li {
         transition: .5s; }
-      .topmenu .max .myMenu li:hover {
-        color: #999; }
+        .topmenu .max .myMenu li:hover {
+          color: #999; }
       .topmenu .max .myMenu #dropdown {
         width: auto;
         float: left;
@@ -232,23 +232,34 @@ body {
       opacity: .6;
       background: no-repeat; }
 
-.item {
-  min-height: 100vh;
-  width: 100vw; }
-  .item .flex-caption {
-    position: relative;
-    top: 255px;
-    left: 219px;
-    max-width: 42%; }
-  .item .signature {
-    float: right;
-    padding-top: 49vh;
-    padding-right: 5%;
-    text-transform: uppercase;
-    font-family: 'Blender Pro';
-    letter-spacing: 1px;
-    font-size: 18px;
-    opacity: .6; }
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: -10px; }
+  .carousel-inner .item {
+    min-height: 100vh;
+    width: 100vw; }
+    .carousel-inner .item .flex-caption {
+      position: relative;
+      top: 255px;
+      left: 219px;
+      max-width: 42%; }
+    .carousel-inner .item .sub-cap {
+      margin-top: 261px;
+      margin-left: 225px;
+      font-family: 'Blender Pro';
+      font-size: 22px;
+      text-transform: capitalize; }
+    .carousel-inner .item .signature {
+      float: right;
+      padding-top: 10%;
+      padding-right: 5%;
+      text-transform: uppercase;
+      font-family: 'Blender Pro';
+      letter-spacing: 1px;
+      font-size: 18px;
+      opacity: .6; }
 
 #slide1 {
   background: url("http://www.jaybirdsport.com/static/img/slide-mitch-x3.jpg") no-repeat center;
@@ -554,6 +565,15 @@ body {
     border-radius: 25px;
     display: flex;
     justify-content: center; }
+    .cart-image-wrapper .cart-image .fa-times-circle {
+      margin-left: 118px;
+      font-size: 20px;
+      padding-top: 20px;
+      padding-right: 20px;
+      height: 20px; }
+      .cart-image-wrapper .cart-image .fa-times-circle:hover {
+        color: #8c8c8c;
+        cursor: pointer; }
     .cart-image-wrapper .cart-image .products-in-cart {
       width: 200px;
       position: relative;

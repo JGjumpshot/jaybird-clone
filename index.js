@@ -59,7 +59,7 @@ app.get('/product/type/:producttype', productsCtrl.getByType);
 app.post('/profile/cart/:cartid', productsCtrl.addToCart);
 app.get('/profile/getCart/:userid', orderCtrl.getCart);
 app.get('/profile/getProductsByCartId/:cartid', productsCtrl.getByCartId)
-
+app.delete('/profile/deleteById/:id', productsCtrl.deleteById)
 app.listen(port, function() {
   console.log('nailed it on port ' + port);
 })

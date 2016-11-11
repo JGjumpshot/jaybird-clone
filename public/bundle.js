@@ -60,10 +60,6 @@ angular.module('jaybirdApp').controller('accessoriesCtrl', ["$scope", "mainServi
   $scope.getAccessories();
 }])
 
-angular.module('jaybirdApp').controller('homeCtrl', ["$scope", function($scope) {
-  $scope.showVid = false;
-}])
-
 angular.module('jaybirdApp').directive('footerDirective', function() {
   return {
     restrict: 'AE',
@@ -91,6 +87,10 @@ angular.module('jaybirdApp').directive('x3Directive', function() {
     templateUrl: './app/directives/x3.html'
   }
 })
+
+angular.module('jaybirdApp').controller('homeCtrl', ["$scope", function($scope) {
+  $scope.showVid = false;
+}])
 
 angular.module('jaybirdApp').controller('loginCtrl', ["$scope", "authService", "$state", function($scope, authService, $state) {
   $scope.login = function(user) {

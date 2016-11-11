@@ -9,7 +9,9 @@
 }
 
 $font: 'Blender Pro';
-
+.spacer {
+  height: 180px;
+}
 .cart-text {
   font-family: $font;
   font-weight: 500;
@@ -19,20 +21,40 @@ $font: 'Blender Pro';
   text-transform: uppercase;
   z-index: 200;
 }
-.cart-image {
-  border: 2px solid #999;
-  width: 60vw;
-  height: 25vh;
-  margin-left: 20%;
-  border-radius: 25px;
-  .products-in-cart{
-    width: 200px;
-    position: relative;
-    // margin-top: 20vh;
-    left: 20vh;
-    z-index: -1;
-  }
-  .order-price {
+.cart-image-wrapper {
     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 70px;
+  .qty {
+    font-size: 40px;
+    margin: auto 0;
+    margin-right: 10vw;
+    font-family: $font;
+    color: #8c8c8c;
+  }
+  .cart-image {
+    border: 2px solid #999;
+    width: 60vw;
+    height: 25vh;
+    margin: 20px 20px 0px 20%;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    .products-in-cart{
+      width: 200px;
+      position: relative;
+      // margin-top: 20vh;
+      left: 10vh;
+      z-index: -1;
+    }
+    .order-price {
+      display: flex;
+      justify-content: space-around;
+      margin: auto 0;
+      font-family: $font;
+      font-size: 40px;
+      color: #8c8c8c;
+    }
   }
 }

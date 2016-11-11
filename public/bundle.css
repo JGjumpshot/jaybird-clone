@@ -523,6 +523,9 @@ body {
   src: url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot");
   src: url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.woff") format("woff"), url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.svg#Blender Pro") format("svg"); }
 
+.spacer {
+  height: 180px; }
+
 .cart-text {
   font-family: "Blender Pro";
   font-weight: 500;
@@ -532,19 +535,37 @@ body {
   text-transform: uppercase;
   z-index: 200; }
 
-.cart-image {
-  border: 2px solid #999;
-  width: 60vw;
-  height: 25vh;
-  margin-left: 20%;
-  border-radius: 25px; }
-  .cart-image .products-in-cart {
-    width: 200px;
-    position: relative;
-    left: 20vh;
-    z-index: -1; }
-  .cart-image .order-price {
-    display: flex; }
+.cart-image-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 70px; }
+  .cart-image-wrapper .qty {
+    font-size: 40px;
+    margin: auto 0;
+    margin-right: 10vw;
+    font-family: "Blender Pro";
+    color: #8c8c8c; }
+  .cart-image-wrapper .cart-image {
+    border: 2px solid #999;
+    width: 60vw;
+    height: 25vh;
+    margin: 20px 20px 0px 20%;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center; }
+    .cart-image-wrapper .cart-image .products-in-cart {
+      width: 200px;
+      position: relative;
+      left: 10vh;
+      z-index: -1; }
+    .cart-image-wrapper .cart-image .order-price {
+      display: flex;
+      justify-content: space-around;
+      margin: auto 0;
+      font-family: "Blender Pro";
+      font-size: 40px;
+      color: #8c8c8c; }
 
 @import url("//db.onlinewebfonts.com/c/335787aa6f57d71cabe8eb5dc89c6d6b?family=Blender+Pro");
 @font-face {
